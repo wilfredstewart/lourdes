@@ -1,0 +1,551 @@
+body{
+    box-sizing: border-box;
+    margin: 0px;
+    color: #222;
+    /* background-color: #e3e8ef; */
+    font-optical-sizing: auto;
+}
+
+.lhs-navbar {
+    position: absolute !important;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    z-index: 9;    
+}
+.lhs-navbar .uk-container {
+    padding-left: 20px;
+    padding-right: 20px;    
+}
+
+.lhs-navbar.uk-background-secondary {
+    background-color: rgba(255, 255, 255, 0);
+}
+.lhs-navbar.uk-sticky-fixed {
+    background-color: rgba(255, 255, 255, 0);
+}
+.lhs-navbar.uk-sticky.uk-active {
+    position: fixed !important;    
+    bottom: unset;
+}
+
+.lhs-navbar .uk-navbar-container:not(.uk-navbar-transparent){
+    background-color: rgba(255, 255, 255, 0);
+}
+.lhs_logo img{
+    height: 78px;
+}
+
+.lhs-navbar.uk-sticky-fixed .lhs_logo{
+    display: none;
+}
+.lhs-navBg{
+    border-radius: 1rem;
+    background: #ffc425;
+    padding: 2px 20px;
+    position: relative;
+    transition: border-radius .3s;
+    height: 60px;
+    box-shadow: 0.1em 0.1em 2em 3px rgb(10 10 10 / 36%);
+}
+
+
+.lhs-navButtonhover{
+    overflow: hidden;
+    transition: color .3s !important;
+    display: inline-block !important;
+    align-items: center !important;
+    display: flex !important;
+    position: relative;
+}
+
+
+
+.lhs-navButtonhover span{
+    position: absolute;
+    left: 0;
+    overflow: hidden;
+    background-color: #ffc425;
+    width: 100%;
+    display: block;
+    transform: translate3d(-100%,0,0);
+    animation: anim-out-layer .3s ease-out;
+     -webkit-backface-visibility: hidden;
+     backface-visibility: hidden;
+  }
+  
+  .lhs-navButtonhover:hover span {
+    animation: anim-in-layer .3s ease forwards;
+  }
+  
+  .lhs-navButtonhover span::before {
+    background-color: #ffc425;
+      content: attr(data-text);
+      width: 100%;
+      display: block;
+      transform: translate3d(100%,0,0);
+      color: #770115;
+      animation: anim-out-text .3s ease-out;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+  }
+  
+  .lhs-navButtonhover:hover span::before {
+    animation: anim-in-text .3s ease forwards;
+  }
+  @keyframes anim-out-text{0%{transform:translateZ(0)}to{transform:translate3d(-100%,0,0)}}
+  @keyframes anim-out-layer{0%{transform:translateZ(0)}to{transform:translate3d(100%,0,0)}}
+  @keyframes anim-in-layer{0%{transform:translate3d(-100%,0,0)}to{transform:translateZ(0)}}
+  @keyframes anim-in-text{0%{transform:translate3d(100%,0,0)}to{transform:translateZ(0)}}
+  
+
+
+
+.text-line::after {
+    animation: moveline 3s linear infinite;
+    background-image: url("../images/lineanimation.svg");
+    background-repeat: repeat-x;
+    background-size: 50% 100%;
+    content: "";
+    display: block;
+    height: 9px;
+    width: 200%;
+}
+.LHS-navbar.uk-background-secondary {
+    background-color: rgb(255 255 255 / 70%);
+}
+
+.LHS_video{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.lhs-navBg li a{
+    font-weight: 600;
+    color: #fff !important;
+    text-transform: capitalize !important;
+    font-size: 19px;
+}
+.lhsBefore::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .4);
+}
+
+@keyframes moveline {
+    to {
+        transform: translateX(-50%)
+    }
+}
+
+
+
+@media (min-width: 1670px) {
+    .lhs-hidden{
+        display: none !important;
+    }
+}
+
+@media (max-width: 1670px) {
+    .lhs-visible{
+        display: flex !important;
+    }
+    .lhs-hide{
+        display: none;
+    }
+}
+
+
+
+
+.lhs-containerSubtitle{
+    font-family: "DM Sans", sans-serif;
+    font-size: 20px;
+}
+
+.lhs-containerpara{
+    font-family: "Platypi", serif;
+    font-size: 36px;
+    line-height: 1.3;
+}
+
+
+
+.lhs-headingtitle{
+    font-size: 100px;
+    font-family: "Walter Turncoat", cursive;
+    color: #fff;
+    z-index: 1;
+    line-height: 1.1;
+    left: 42%;
+    bottom: 40%;
+    text-shadow: 0.1em 0.1em 0.1em rgba(10, 10, 10, 0.6);
+}
+
+.lhs-descriptionImage {
+    height: 520px;
+    object-position: center;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.lhs-descriptionDotNav.uk-dotnav>.uk-active>*{
+    background-color: rgb(39 54 86) !important;
+}
+.lhs-descriptionDotNav.uk-dotnav>*>*{
+    border: 3px solid rgb(39 54 86) !important;
+    width: 16px !important;
+    height: 16px !important;
+}
+
+.lhs-descriptionDotNav.uk-dotnav>*>:hover{
+    background-color: rgb(39 54 86) !important;
+}
+
+.lhs-switchBg{
+    background-color: #273656;
+    padding: 110px 0px;
+}
+.lhs-switchBg li a{
+    font-size: 30px !important;
+    color: #ffffff !important;
+}
+.lhsswichtitle{
+    padding: 0px 40px !important;
+}
+.lhsswitchdiv .lhsswichtitle {
+    position: relative;
+    cursor: pointer;
+    -webkit-transition: all .3s ease-in-out 0s;
+    -moz-transition: all .3s ease-in-out 0s;
+    transition: all .3s ease-in-out 0s
+}
+.uk-switcher{
+    color: #ffffff !important;
+}
+
+
+
+/* .lhssection3-img1 */
+
+.lhssection3-img1{
+    object-fit: cover;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.lhssection3-img1 img{
+    height: 470px;
+    object-fit: cover;
+}
+.lhssection3-img2{
+    object-fit: cover;
+    width: 92%;
+    overflow: hidden;
+    transform: rotate(355deg);
+    padding-left: 14px;
+}
+.lhssection3-img2 img{
+    height: 580px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.lhssection3-img3{
+    object-fit: cover;
+    width: 90%;
+    overflow: hidden;
+    clip-path: polygon(100% 45%, 0 0, 0 100%);
+    padding-left: 50px;
+}
+.lhssection3-img3 img{
+    height: 470px;
+    object-fit: cover;
+}
+
+.lhssection1Position{
+    position: absolute;
+    left: 12px;
+    top: 12px;
+}
+.lhssectionIconBg{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    position: relative;
+    box-sizing: border-box;
+    background: #000;
+    display: inline-block;
+    vertical-align: middle;
+    border: 1px solid #000;
+}
+.lhssectionIcon{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 26px;
+    color: #fff;
+}
+.lhs_section1IconPosition{
+    position: absolute;
+    top: -48%;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
+    line-height: 1;
+}
+.lhs_section1Iconinnerpos{
+    width: 180%;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.lhs_section2Iconinnerpos{
+   
+}
+.lhs_section2IconPosition{
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
+    line-height: 1;
+    margin-left: 20px;
+}
+
+.lhs_section3Iconinnerpos{
+    width: 180%;
+    top: 250%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.lhs_section3IconPosition{
+    position: absolute;
+    top: 10;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
+    line-height: 1;
+    left: 34%;
+}
+.lhssection3Position {
+    position: absolute;
+    left: 17%;
+    top: -10px;
+    z-index: 1;
+    width: 88%;
+}
+
+/* .lhssection3-img1 */
+
+.lhssection3-padding{
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
+}
+.lhsswitchdiv .lhsswichtitle:after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    height: 2px;
+    width: 77px;
+    left: 40px;
+    opacity: 0;
+    background: -webkit-linear-gradient(-540deg,#273656 50%,#ffc425 0);
+    background: -webkit-gradient(linear,right top,left top,color-stop(50%,#273656),color-stop(0,#ffc425));
+    background: -webkit-linear-gradient(right,#273656 50%,#ffc425 0);
+    background: -moz-linear-gradient(right,#273656 50%,#ffc425 0);
+    background: linear-gradient(270deg,#273656 50%,#ffc425 0);
+    background-position-x: 0%;
+    background-position-y: 0%;
+    -webkit-background-size: auto auto;
+    background-size: auto;
+    -webkit-background-size: 200% 100%;
+    background-size: 200% 100%;
+    background-position: 100% 100%;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    transition: all .4s ease
+}
+
+.lhsswitchdiv .lhsswichtitle.uk-active:after {
+    opacity: 1;
+    background-position: 0 100%;
+}
+
+.lhsswitchdiv .lhsswichtitle:after {
+    bottom: -4px;
+    width: 72px
+}
+/* .lhsswitchdiv.uk-subnav>.uk-active>a{
+    color: #a5e3f1 !important;
+} */
+.lhsswichtitle a:hover{
+    color: #a5e3f1 !important;
+}
+
+.lhsswitchersection #uk-switcher-2::after{
+    content: "Community";
+    position: absolute;
+    top: -140px;
+    font-size: 200px;
+    opacity: .05;
+    line-height: 1;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.lhsswitchersection #uk-switcher-4::after{
+    content: "Creativity";
+    position: absolute;
+    top: -140px;
+    font-size: 200px;
+    opacity: .05;
+    line-height: 1;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.lhsswitchersection #uk-switcher-6::after{
+    content: "Scholarship";
+    position: absolute;
+    top: -140px;
+    font-size: 200px;
+    opacity: .05;
+    line-height: 1;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.lhsswitchersection #uk-switcher-8::after{
+    content: "Courage";
+    position: absolute;
+    top: -140px;
+    font-size: 200px;
+    opacity: .05;
+    line-height: 1;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.lhsswitchdiv{
+    z-index: 2;
+    position: relative;
+}
+
+
+
+
+
+
+
+.lhs-campusSub{
+    font-size: 16px;
+    line-height: 1.7;
+}
+.lhs-campusTitle{
+    font-family: "Platypi", serif;
+    font-size: 44px;
+    line-height: 56px;
+}
+
+.lhs-campusbg{
+    background-image: url("../images/Schoolphoto.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 400px;
+    position: relative;
+    color: #ffffff;
+}
+
+.lhs-campusbg::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .6);
+    z-index: 0;
+}
+
+.lhs-campuslinks::after {
+    content: "";
+    width: 24px;
+    height: 3px;
+    background-color: #ffc425;
+    left: 0;
+    bottom: -9px;
+    position: absolute;
+    transition: right .3s ease-out;
+}
+
+.lhs-campuslinks:hover::after {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+/* footer */
+.lhs-footerbg{
+    background-color: #292929;
+    color: #fff;
+}
+.lhs-footertext{
+    font-size: 12px;
+}
+.lhs-footer-icon{
+    color: #e18c0a;
+    font-size: 20px;
+}
+.lhs-footerbg2{
+    background-color: #000;
+    padding: 30px 70px;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.lhs-footer_logo{
+    justify-content: left;
+    margin-left: 55px;
+}
+.lhs-footer_logo img{
+    height: 110px;
+}
+
+
+
+/* theme */
+
+.lhs-theme_bg{
+    background-color: rgba(0, 30, 96, .05);
+}
+
+.lhs-themepattern{
+  
+    background-image: url("../images/admission/pattern.svg");
+}
+
+.uk-button-text::before{
+    border-bottom: 2px solid currentColor !important;
+}

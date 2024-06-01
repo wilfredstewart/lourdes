@@ -1,0 +1,185 @@
+.lhs-campustournbg {
+    background-image: url(../images/admission/img1.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 663px;
+    position: relative;
+    color: #ffffff;
+}
+
+.lhs-campustournoverlay {
+    background-color: #273656;
+    opacity: .5;
+    mix-blend-mode: darken;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.lhs-campustournoverlay_bottom {
+    width: 100%;
+}
+.lhs-campustournoverlay_title_wrap {
+    position: absolute;
+    padding-bottom: 87px;
+    left: 0;
+    width: 100%;
+    bottom: 66px;
+    color: #fff;
+}
+
+.lhs-campustournoverlay_title {
+    font-family: "Platypi", serif;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 74px;
+}
+.lhs-campustournoverlay_banner {
+    display: inline-table;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    color: #fff;
+    letter-spacing: .05em;
+    height: 66px;
+    background-color: rgb(39 54 86 / 40%);
+}
+.lhs-campustournoverlay_bottomText {
+    font-weight: 600;
+    color: #fff !important;
+    text-transform: capitalize !important;
+    font-size: 17px;
+    margin-right: 8px;
+}
+
+
+
+
+
+
+
+.lhs-campustournToppara {
+    font-family: "Platypi", serif;
+    font-size: 36px;
+    line-height: 1.3;
+}
+
+
+
+
+
+.lhs-campustourn {
+    background-image: url(../images/campustour/campustour.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+
+.lhs-campustournsectionbg::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    background-color: #edeff4;
+    width: 71%;
+    height: 100%;
+    z-index: -1;
+}
+.lhs-campustourntitle {
+    font-family: "DM Sans", sans-serif;
+    font-size: 27px;
+    line-height: 1.3;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.lhs-campustournsectionflex{
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+
+
+
+.container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+  }
+  
+  .space-holder {
+    position: relative;
+    width: 100%;
+  }
+  
+  .sticky {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  .horizontal {
+    position: absolute;
+    height: 100%;
+    will-change: transform;
+  }
+  
+  .cards .innn{
+    flex-wrap: wrap;
+  }
+  .cards {
+    position: relative;
+    height: 100%;
+    padding: 0 0 0 150px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .lhs_campustourn-card {
+    width: 600px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px 2px rgb(52 52 52 / 56%)
+  }
+
+  .lhs_campustourn-cardPara{
+    height: 48px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .lhs-campustournSlider{
+    background-image: url("../images/campustour/campustourbg.jpg");
+    background-repeat: repeat;
+    background-size: contain;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.lhs_campustourn-card h3{
+    font-family: "Platypi", serif;
+    position: relative;
+}
+.lhs_campustourn-card h3::before{
+    content: "";
+    background-color: #273656;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    bottom: -10px;
+}
